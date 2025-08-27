@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Đăng Nhập</title>
+<title>Đăng Ký Tài Khoản</title>
 <style>
 body {
     font-family: Arial, sans-serif;
@@ -12,12 +12,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Sử dụng min-height để form dài hơn vẫn hiển thị tốt */
     margin: 0;
+    padding: 20px 0; /* Thêm padding trên dưới */
 }
 
-.login-container {
-    width: 400px;
+.register-container {
+    width: 500px; /* Tăng chiều rộng để chứa nhiều trường hơn */
     background-color: #fff;
     padding: 40px;
     border-radius: 8px;
@@ -25,7 +26,7 @@ body {
     text-align: center;
 }
 
-.login-container h2 {
+.register-container h2 {
     margin-top: 0;
     margin-bottom: 30px;
     font-size: 24px;
@@ -55,33 +56,10 @@ body {
     font-size: 18px;
 }
 
-.options-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    font-size: 14px;
-}
-
-.remember-me {
-    display: flex;
-    align-items: center;
-    color: #666;
-}
-
-.remember-me input {
-    margin-right: 8px;
-}
-
-.forgot-password a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.login-button {
+.register-button {
     width: 100%;
     padding: 12px;
-    background-color: #007bff;
+    background-color: #28a745; /* Màu xanh lá cây cho đăng ký */
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -90,18 +68,17 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.login-button:hover {
-    background-color: #0056b3;
+.register-button:hover {
+    background-color: #218838;
 }
 
-/* CSS CHO PHẦN ĐĂNG KÝ MỚI */
-.register-link {
+.login-link {
     margin-top: 20px;
     font-size: 14px;
     color: #666;
 }
 
-.register-link a {
+.login-link a {
     color: #007bff;
     text-decoration: none;
 }
@@ -111,8 +88,8 @@ body {
 </head>
 <body>
 
-    <div class="login-container">
-        <h2>ĐĂNG NHẬP</h2>
+    <div class="register-container">
+        <h2>ĐĂNG KÝ TÀI KHOẢN</h2>
 
         <%
         String alert = (String) request.getAttribute("alert");
@@ -123,31 +100,39 @@ body {
         }
         %>
 
-        <form action="login" method="post">
+        <form action="register" method="post">
+            <div class="input-group">
+                <span class="icon"><i class="fas fa-user-circle"></i></span> 
+                <input type="text" name="fullname" placeholder="Họ và tên" required>
+            </div>
             <div class="input-group">
                 <span class="icon"><i class="fas fa-user"></i></span> 
-                <input type="text" name="username" placeholder="Tên đăng nhập">
+                <input type="text" name="username" placeholder="Tên đăng nhập" required>
+            </div>
+             <div class="input-group">
+                <span class="icon"><i class="fas fa-envelope"></i></span> 
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+             <div class="input-group">
+                <span class="icon"><i class="fas fa-phone"></i></span> 
+                <input type="text" name="phone" placeholder="Số điện thoại" required>
             </div>
             <div class="input-group">
                 <span class="icon"><i class="fas fa-lock"></i></span> 
-                <input type="password" name="password" placeholder="Mật khẩu">
+                <input type="password" name="password" placeholder="Mật khẩu" required>
             </div>
-            <div class="options-container">
-                <div class="remember-me">
-                    <input type="checkbox" id="remember-me" name="remember-me">
-                    <label for="remember-me">Nhớ tôi</label>
-                </div>
-                <div class="forgot-password">
-                    <a href="#">Quên mật khẩu?</a>
-                </div>
+             <div class="input-group">
+                <span class="icon"><i class="fas fa-check-circle"></i></span> 
+                <input type="password" name="confirm-password" placeholder="Xác nhận mật khẩu" required>
             </div>
-            <button type="submit" class="login-button">Đăng nhập</button>
-        </form>
 
-        <div class="register-link">
-            <p>Chưa có tài khoản? <a href="register.jsp">Đăng ký ngay</a></p>
+            <button type="submit" class="register-button">Đăng ký</button>
+        </form>
+        
+        <div class="login-link">
+            <p>Đã có tài khoản? <a href="login.jsp">Đăng nhập</a></p>
         </div>
-        </div>
+    </div>
 
 </body>
 </html>

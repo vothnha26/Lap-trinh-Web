@@ -7,80 +7,90 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
-import model.*;
-
+import model.User;
 import java.io.IOException;
-import service.*;
-import service.impl.*;
+import service.UserService;
+import service.impl.UserServiceImpl;
 
 @WebServlet(urlPatterns = "/login")
 public class LoginController extends HttpServlet {
-	private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
+    public static final String COOKIE_REMEMBER = "username";
 
-	public LoginController() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        
+        HttpSession session = request.getSession(false);
+        if (session != null && session.getAttribute("account") != null) {
+            response.sendRedirect(request.getContextPath() + "/waiting");
+            return;
+        }
 
-	@Override
-	protected void doGet(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		HttpSession session = request.getSession(false);
-		if (session != null && session.getAttribute("account") != null) {
-			response.sendRedirect(request.getContextPath() + "/home");
-			return;
-		}
-	}
+        Cookie[] cookies = request.getCookies();
+        if (cookies != null) {
+            for (Cookie cookie : cookies) {
+                if (cookie.getName().equals(COOKIE_REMEMBER)) {
+                    String username = cookie.getValue();
+                    UserService service = new UserServiceImpl();
+                    User user = service.get(username); // Giả sử đã có hàm này
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		response.setContentType("text/html");
-		response.setCharacterEncoding("UTF-8");
-		request.setCharacterEncoding("UTF-8");
+                    if (user != null) {
+                        session = request.getSession(true);
+                        session.setAttribute("account", user);
+                        response.sendRedirect(request.getContextPath() + "/waiting");
+                        return;
+                    }
+                }
+            }
+        }
+        
+        request.getRequestDispatcher("/login.jsp").forward(request, response);
+    }
 
-		String username = request.getParameter("username");
-		String password = request.getParameter("password");
-		boolean isRememberMe = false;
-		String remember = request.getParameter("remember");
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        response.setContentType("text/html");
+        response.setCharacterEncoding("UTF-8");
+        request.setCharacterEncoding("UTF-8");
 
-		if ("on".equals(remember)) {
-			isRememberMe = true;
-		}
-		
-		String alertMsg = "";
-		if (username.isEmpty() || password.isEmpty()) {
-			alertMsg = "Tài khoản hoặc mật khẩu không được rỗng";
-			request.setAttribute("alert", alertMsg);
-			request.getRequestDispatcher("/login.jsp").forward(request, response);
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
+        String remember = request.getParameter("remember-me"); // SỬA Ở ĐÂY
 
-			return;
-		}
+        boolean isRememberMe = "on".equals(remember);
+        
+        String alertMsg = "";
+        if (username.isEmpty() || password.isEmpty()) {
+            alertMsg = "Tài khoản hoặc mật khẩu không được rỗng";
+            request.setAttribute("alert", alertMsg);
+            request.getRequestDispatcher("/login.jsp").forward(request, response);
+            return;
+        }
 
-		UserService service = new UserServiceImpl();
-		User user = service.login(username, password);
-		
-		if (user != null) {
-			HttpSession session = request.getSession(true);
-			session.setAttribute("account", user);
-			if (isRememberMe) {
-				saveRemeberMe(response, username);
-			}
-			response.sendRedirect(request.getContextPath() + "/home");
-		} else {
-			alertMsg = "Tài khoản hoặc mật khẩu không đúng";
-			request.setAttribute("alert", alertMsg);
-			request.getRequestDispatcher("/login.jsp").forward(request, response);
-		}
-	}
+        UserService service = new UserServiceImpl();
+        User user = service.login(username, password);
+        
+        if (user != null) {
+            HttpSession session = request.getSession(true);
+            session.setAttribute("account", user);
+            if (isRememberMe) {
+                Cookie cookie = new Cookie(COOKIE_REMEMBER, username);
+                cookie.setMaxAge(7 * 24 * 60 * 60);
+                cookie.setPath(request.getContextPath()); // Thêm dòng này
+                response.addCookie(cookie);
+            }
+            response.sendRedirect(request.getContextPath() + "/waiting");
+        } else {
+            alertMsg = "Tài khoản hoặc mật khẩu không đúng";
+            request.setAttribute("alert", alertMsg);
+            request.getRequestDispatcher("/login.jsp").forward(request, response);
+        }
+    }
 
-
-	private void saveRemeberMe(HttpServletResponse response, String username) {
-		Cookie cookie = new Cookie(COOKIE_REMEMBER, username);
-		cookie.setMaxAge(30 * 60);
-		response.addCookie(cookie);
-	}
-	
-	public static final String SESSION_USERNAME = "username";
-	public static final String COOKIE_REMEMBER = "username";
-
+    private void saveRemeberMe(HttpServletResponse response, String username) {
+        Cookie cookie = new Cookie(COOKIE_REMEMBER, username);
+        cookie.setMaxAge(7 * 24 * 60 * 60); // SỬA Ở ĐÂY (7 ngày)
+        response.addCookie(cookie);
+    }
 }
