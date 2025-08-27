@@ -5,7 +5,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import service.UserDao;
 import model.User;
-// Bước 1: Import lớp DBConnection vừa tạo
 import config.DBConnection;
 
 public class UserDaoImpl implements UserDao {
@@ -45,7 +44,6 @@ public class UserDaoImpl implements UserDao {
     public void insert(User user) {
         String sql = "INSERT INTO [User](email, username, fullname, password, avatar, roleid, phone, createddate) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
         
-        // Bước 2: Sử dụng DBConnection.getConnection()
         try (Connection conn = DBConnection.getConnection();
              PreparedStatement ps = conn.prepareStatement(sql)) {
 
@@ -69,7 +67,6 @@ public class UserDaoImpl implements UserDao {
     public boolean checkExistEmail(String email) {
         String sql = "SELECT 1 FROM [User] WHERE email = ?";
         
-        // Bước 2: Sử dụng DBConnection.getConnection()
         try (Connection conn = DBConnection.getConnection();
              PreparedStatement ps = conn.prepareStatement(sql)) {
              
@@ -88,7 +85,6 @@ public class UserDaoImpl implements UserDao {
     public boolean checkExistUsername(String username) {
         String sql = "SELECT 1 FROM [User] WHERE username = ?";
         
-        // Bước 2: Sử dụng DBConnection.getConnection()
         try (Connection conn = DBConnection.getConnection();
              PreparedStatement ps = conn.prepareStatement(sql)) {
              
@@ -107,7 +103,6 @@ public class UserDaoImpl implements UserDao {
     public boolean checkExistPhone(String phone) {
         String sql = "SELECT 1 FROM [User] WHERE phone = ?";
         
-        // Bước 2: Sử dụng DBConnection.getConnection()
         try (Connection conn = DBConnection.getConnection();
              PreparedStatement ps = conn.prepareStatement(sql)) {
              

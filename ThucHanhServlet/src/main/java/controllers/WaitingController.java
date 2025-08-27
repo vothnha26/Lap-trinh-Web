@@ -32,7 +32,6 @@ public class WaitingController extends HttpServlet {
                 resp.sendRedirect(req.getContextPath() + "/home");
             }
         } else {
-            // nếu không có session/account thì về login
             resp.sendRedirect(req.getContextPath() + "/login");
         }
     }
