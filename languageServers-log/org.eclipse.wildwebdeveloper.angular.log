@@ -1,0 +1,869 @@
+
+[2025-08-19T19:12:50.180157100+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 2426
+
+
+[2025-08-19T19:12:50.181166900+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"1","method":"initialize","params":{"processId":3212,"rootPath":"/C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/","rootUri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/","capabilities":{"workspace":{"applyEdit":true,"workspaceEdit":{"documentChanges":true,"resourceOperations":["create","delete","rename"],"failureHandling":"undo","changeAnnotationSupport":{"groupsOnLabel":true}},"symbol":{"dynamicRegistration":true},"executeCommand":{"dynamicRegistration":true},"workspaceFolders":true,"configuration":true,"codeLens":{"refreshSupport":true}},"textDocument":{"synchronization":{"willSave":true,"willSaveWaitUntil":true,"didSave":true},"completion":{"completionItem":{"snippetSupport":true,"documentationFormat":["markdown","plaintext"],"resolveSupport":{"properties":["documentation","detail","additionalTextEdits"]},"insertTextModeSupport":{"valueSet":[1,2]}},"contextSupport":true,"completionList":{"itemDefaults":["commitCharacters","editRange","insertTextFormat","insertTextMode"]}},"hover":{"contentFormat":["markdown","plaintext"]},"signatureHelp":{},"references":{},"documentHighlight":{},"documentSymbol":{"symbolKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]},"hierarchicalDocumentSymbolSupport":true},"formatting":{"dynamicRegistration":true},"rangeFormatting":{},"onTypeFormatting":{"dynamicRegistration":true},"definition":{"linkSupport":true},"typeDefinition":{"linkSupport":true},"codeAction":{"codeActionLiteralSupport":{"codeActionKind":{"valueSet":["quickfix","refactor","refactor.extract","refactor.inline","refactor.rewrite","source","source.organizeImports"]}},"dataSupport":true,"resolveSupport":{"properties":["edit"]},"dynamicRegistration":true},"codeLens":{},"documentLink":{},"colorProvider":{},"rename":{"prepareSupport":true},"publishDiagnostics":{},"foldingRange":{"lineFoldingOnly":true,"foldingRangeKind":{"valueSet":["comment","imports","region"]},"foldingRange":{"collapsedText":false}},"selectionRange":{},"inlayHint":{}},"window":{"workDoneProgress":true,"showMessage":{},"showDocument":{"support":true}}},"clientInfo":{"name":"Spring Tools for Eclipse","version":"0.18.21.202506041137"},"trace":"off","workspaceFolders":[{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/","name":"iot-web"}]}}
+[2025-08-19T19:12:50.997284+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"1","result":{"capabilities":{"foldingRangeProvider":true,"codeLensProvider":{"resolveProvider":true},"textDocumentSync":2,"completionProvider":{"resolveProvider":true,"triggerCharacters":["<",".","*","[","(","$","|","@"]},"definitionProvider":true,"typeDefinitionProvider":true,"referencesProvider":true,"renameProvider":{"prepareProvider":true},"hoverProvider":true,"signatureHelpProvider":{"triggerCharacters":["(",","],"retriggerCharacters":[","]},"workspace":{"workspaceFolders":{"supported":true}},"codeActionProvider":{"resolveProvider":true,"codeActionKinds":["quickfix"]}},"serverOptions":{"logFile":"C:\\Users\\ACER\\Documents\\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\\.metadata\\angular-language-server.log"}}}
+[2025-08-19T19:12:51.002320500+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 52
+
+
+[2025-08-19T19:12:51.003319700+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","method":"initialized","params":{}}
+[2025-08-19T19:12:51.007321600+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 226
+
+
+[2025-08-19T19:12:51.008832600+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","method":"workspace/didChangeWorkspaceFolders","params":{"event":{"added":[{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/","name":"iot-web"}],"removed":[]}}}
+[2025-08-19T19:12:51.008832600+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 586
+
+
+[2025-08-19T19:12:51.011358100+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html","languageId":"html","version":1,"text":"\u003c!DOCTYPE html\u003e\r\n\u003chtml xmlns:th\u003d\"http://www.thymeleaf.org\"\u003e\r\n\u003chead\u003e\u003cmeta charset\u003d\"UTF-8\"\u003e\u003ctitle\u003eHome\u003c/title\u003e\u003c/head\u003e\r\n\u003cbody\u003e\r\n\u003ch1 th:text\u003d\"${msg}\"\u003emsg\u003c/h1\u003e\r\n\u003c/body\u003e\r\n\u003c/html\u003e\r\n"}}}
+[2025-08-19T19:12:51.013381200+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 225
+
+
+[2025-08-19T19:12:51.014379500+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"2","method":"textDocument/codeLens","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"}}}
+[2025-08-19T19:12:51.016376100+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 229
+
+
+[2025-08-19T19:12:51.017377900+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"3","method":"textDocument/foldingRange","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"}}}
+[2025-08-19T19:12:51.745450700+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"2","result":null}
+[2025-08-19T19:12:51.747447800+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"3","result":null}
+[2025-08-19T19:12:53.330459200+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 216
+
+
+[2025-08-19T19:12:53.331460600+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","method":"textDocument/didClose","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"}}}
+[2025-08-19T19:12:58.873378400+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 60
+
+
+[2025-08-19T19:12:58.873378400+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"4","method":"shutdown","params":null}
+[2025-08-19T19:12:58.876375900+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"4","result":null}
+[2025-08-19T19:12:58.877376+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 47
+
+
+[2025-08-19T19:12:58.877376+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","method":"exit","params":null}
+[2025-08-19T19:14:42.648561900+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 2426
+
+
+[2025-08-19T19:14:42.650074700+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"1","method":"initialize","params":{"processId":3212,"rootPath":"/C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/","rootUri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/","capabilities":{"workspace":{"applyEdit":true,"workspaceEdit":{"documentChanges":true,"resourceOperations":["create","delete","rename"],"failureHandling":"undo","changeAnnotationSupport":{"groupsOnLabel":true}},"symbol":{"dynamicRegistration":true},"executeCommand":{"dynamicRegistration":true},"workspaceFolders":true,"configuration":true,"codeLens":{"refreshSupport":true}},"textDocument":{"synchronization":{"willSave":true,"willSaveWaitUntil":true,"didSave":true},"completion":{"completionItem":{"snippetSupport":true,"documentationFormat":["markdown","plaintext"],"resolveSupport":{"properties":["documentation","detail","additionalTextEdits"]},"insertTextModeSupport":{"valueSet":[1,2]}},"contextSupport":true,"completionList":{"itemDefaults":["commitCharacters","editRange","insertTextFormat","insertTextMode"]}},"hover":{"contentFormat":["markdown","plaintext"]},"signatureHelp":{},"references":{},"documentHighlight":{},"documentSymbol":{"symbolKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]},"hierarchicalDocumentSymbolSupport":true},"formatting":{"dynamicRegistration":true},"rangeFormatting":{},"onTypeFormatting":{"dynamicRegistration":true},"definition":{"linkSupport":true},"typeDefinition":{"linkSupport":true},"codeAction":{"codeActionLiteralSupport":{"codeActionKind":{"valueSet":["quickfix","refactor","refactor.extract","refactor.inline","refactor.rewrite","source","source.organizeImports"]}},"dataSupport":true,"resolveSupport":{"properties":["edit"]},"dynamicRegistration":true},"codeLens":{},"documentLink":{},"colorProvider":{},"rename":{"prepareSupport":true},"publishDiagnostics":{},"foldingRange":{"lineFoldingOnly":true,"foldingRangeKind":{"valueSet":["comment","imports","region"]},"foldingRange":{"collapsedText":false}},"selectionRange":{},"inlayHint":{}},"window":{"workDoneProgress":true,"showMessage":{},"showDocument":{"support":true}}},"clientInfo":{"name":"Spring Tools for Eclipse","version":"0.18.21.202506041137"},"trace":"off","workspaceFolders":[{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/","name":"iot-web"}]}}
+[2025-08-19T19:14:43.476995400+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"1","result":{"capabilities":{"foldingRangeProvider":true,"codeLensProvider":{"resolveProvider":true},"textDocumentSync":2,"completionProvider":{"resolveProvider":true,"triggerCharacters":["<",".","*","[","(","$","|","@"]},"definitionProvider":true,"typeDefinitionProvider":true,"referencesProvider":true,"renameProvider":{"prepareProvider":true},"hoverProvider":true,"signatureHelpProvider":{"triggerCharacters":["(",","],"retriggerCharacters":[","]},"workspace":{"workspaceFolders":{"supported":true}},"codeActionProvider":{"resolveProvider":true,"codeActionKinds":["quickfix"]}},"serverOptions":{"logFile":"C:\\Users\\ACER\\Documents\\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\\.metadata\\angular-language-server.log"}}}
+[2025-08-19T19:14:43.478508100+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 52
+
+
+[2025-08-19T19:14:43.478508100+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","method":"initialized","params":{}}
+[2025-08-19T19:14:43.480014700+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 226
+
+
+[2025-08-19T19:14:43.480014700+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","method":"workspace/didChangeWorkspaceFolders","params":{"event":{"added":[{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/","name":"iot-web"}],"removed":[]}}}
+[2025-08-19T22:01:50.177779100+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 2427
+
+
+[2025-08-19T22:01:50.178782900+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"1","method":"initialize","params":{"processId":27492,"rootPath":"/C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/","rootUri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/","capabilities":{"workspace":{"applyEdit":true,"workspaceEdit":{"documentChanges":true,"resourceOperations":["create","delete","rename"],"failureHandling":"undo","changeAnnotationSupport":{"groupsOnLabel":true}},"symbol":{"dynamicRegistration":true},"executeCommand":{"dynamicRegistration":true},"workspaceFolders":true,"configuration":true,"codeLens":{"refreshSupport":true}},"textDocument":{"synchronization":{"willSave":true,"willSaveWaitUntil":true,"didSave":true},"completion":{"completionItem":{"snippetSupport":true,"documentationFormat":["markdown","plaintext"],"resolveSupport":{"properties":["documentation","detail","additionalTextEdits"]},"insertTextModeSupport":{"valueSet":[1,2]}},"contextSupport":true,"completionList":{"itemDefaults":["commitCharacters","editRange","insertTextFormat","insertTextMode"]}},"hover":{"contentFormat":["markdown","plaintext"]},"signatureHelp":{},"references":{},"documentHighlight":{},"documentSymbol":{"symbolKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]},"hierarchicalDocumentSymbolSupport":true},"formatting":{"dynamicRegistration":true},"rangeFormatting":{},"onTypeFormatting":{"dynamicRegistration":true},"definition":{"linkSupport":true},"typeDefinition":{"linkSupport":true},"codeAction":{"codeActionLiteralSupport":{"codeActionKind":{"valueSet":["quickfix","refactor","refactor.extract","refactor.inline","refactor.rewrite","source","source.organizeImports"]}},"dataSupport":true,"resolveSupport":{"properties":["edit"]},"dynamicRegistration":true},"codeLens":{},"documentLink":{},"colorProvider":{},"rename":{"prepareSupport":true},"publishDiagnostics":{},"foldingRange":{"lineFoldingOnly":true,"foldingRangeKind":{"valueSet":["comment","imports","region"]},"foldingRange":{"collapsedText":false}},"selectionRange":{},"inlayHint":{}},"window":{"workDoneProgress":true,"showMessage":{},"showDocument":{"support":true}}},"clientInfo":{"name":"Spring Tools for Eclipse","version":"0.18.21.202506041137"},"trace":"off","workspaceFolders":[{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/","name":"iot-web"}]}}
+[2025-08-19T22:01:50.885465100+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"1","result":{"capabilities":{"foldingRangeProvider":true,"codeLensProvider":{"resolveProvider":true},"textDocumentSync":2,"completionProvider":{"resolveProvider":true,"triggerCharacters":["<",".","*","[","(","$","|","@"]},"definitionProvider":true,"typeDefinitionProvider":true,"referencesProvider":true,"renameProvider":{"prepareProvider":true},"hoverProvider":true,"signatureHelpProvider":{"triggerCharacters":["(",","],"retriggerCharacters":[","]},"workspace":{"workspaceFolders":{"supported":true}},"codeActionProvider":{"resolveProvider":true,"codeActionKinds":["quickfix"]}},"serverOptions":{"logFile":"C:\\Users\\ACER\\Documents\\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\\.metadata\\angular-language-server.log"}}}
+[2025-08-19T22:01:50.887465300+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 52
+
+
+[2025-08-19T22:01:50.888463700+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","method":"initialized","params":{}}
+[2025-08-19T22:01:50.889463+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 586
+
+
+[2025-08-19T22:01:50.889463+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html","languageId":"html","version":1,"text":"\u003c!DOCTYPE html\u003e\r\n\u003chtml xmlns:th\u003d\"http://www.thymeleaf.org\"\u003e\r\n\u003chead\u003e\u003cmeta charset\u003d\"UTF-8\"\u003e\u003ctitle\u003eHome\u003c/title\u003e\u003c/head\u003e\r\n\u003cbody\u003e\r\n\u003ch1 th:text\u003d\"${msg}\"\u003emsg\u003c/h1\u003e\r\n\u003c/body\u003e\r\n\u003c/html\u003e\r\n"}}}
+[2025-08-19T22:01:50.891470200+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 225
+
+
+[2025-08-19T22:01:50.892743800+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"2","method":"textDocument/codeLens","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"}}}
+[2025-08-19T22:01:50.893469400+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 226
+
+
+[2025-08-19T22:01:50.894471500+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","method":"workspace/didChangeWorkspaceFolders","params":{"event":{"added":[{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/","name":"iot-web"}],"removed":[]}}}
+[2025-08-19T22:01:50.896473+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 229
+
+
+[2025-08-19T22:01:50.897473+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"3","method":"textDocument/foldingRange","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"}}}
+[2025-08-19T22:01:51.739775600+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"2","result":null}
+[2025-08-19T22:01:51.740776900+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"3","result":null}
+[2025-08-19T22:03:34.008274+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 216
+
+
+[2025-08-19T22:03:34.008274+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","method":"textDocument/didClose","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"}}}
+[2025-08-19T22:55:47.146738600+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 2427
+
+
+[2025-08-19T22:55:47.147747200+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"1","method":"initialize","params":{"processId":24876,"rootPath":"/C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/","rootUri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/","capabilities":{"workspace":{"applyEdit":true,"workspaceEdit":{"documentChanges":true,"resourceOperations":["create","delete","rename"],"failureHandling":"undo","changeAnnotationSupport":{"groupsOnLabel":true}},"symbol":{"dynamicRegistration":true},"executeCommand":{"dynamicRegistration":true},"workspaceFolders":true,"configuration":true,"codeLens":{"refreshSupport":true}},"textDocument":{"synchronization":{"willSave":true,"willSaveWaitUntil":true,"didSave":true},"completion":{"completionItem":{"snippetSupport":true,"documentationFormat":["markdown","plaintext"],"resolveSupport":{"properties":["documentation","detail","additionalTextEdits"]},"insertTextModeSupport":{"valueSet":[1,2]}},"contextSupport":true,"completionList":{"itemDefaults":["commitCharacters","editRange","insertTextFormat","insertTextMode"]}},"hover":{"contentFormat":["markdown","plaintext"]},"signatureHelp":{},"references":{},"documentHighlight":{},"documentSymbol":{"symbolKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]},"hierarchicalDocumentSymbolSupport":true},"formatting":{"dynamicRegistration":true},"rangeFormatting":{},"onTypeFormatting":{"dynamicRegistration":true},"definition":{"linkSupport":true},"typeDefinition":{"linkSupport":true},"codeAction":{"codeActionLiteralSupport":{"codeActionKind":{"valueSet":["quickfix","refactor","refactor.extract","refactor.inline","refactor.rewrite","source","source.organizeImports"]}},"dataSupport":true,"resolveSupport":{"properties":["edit"]},"dynamicRegistration":true},"codeLens":{},"documentLink":{},"colorProvider":{},"rename":{"prepareSupport":true},"publishDiagnostics":{},"foldingRange":{"lineFoldingOnly":true,"foldingRangeKind":{"valueSet":["comment","imports","region"]},"foldingRange":{"collapsedText":false}},"selectionRange":{},"inlayHint":{}},"window":{"workDoneProgress":true,"showMessage":{},"showDocument":{"support":true}}},"clientInfo":{"name":"Spring Tools for Eclipse","version":"0.18.21.202506041137"},"trace":"off","workspaceFolders":[{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/","name":"iot-web"}]}}
+[2025-08-19T22:55:47.913411100+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"1","result":{"capabilities":{"foldingRangeProvider":true,"codeLensProvider":{"resolveProvider":true},"textDocumentSync":2,"completionProvider":{"resolveProvider":true,"triggerCharacters":["<",".","*","[","(","$","|","@"]},"definitionProvider":true,"typeDefinitionProvider":true,"referencesProvider":true,"renameProvider":{"prepareProvider":true},"hoverProvider":true,"signatureHelpProvider":{"triggerCharacters":["(",","],"retriggerCharacters":[","]},"workspace":{"workspaceFolders":{"supported":true}},"codeActionProvider":{"resolveProvider":true,"codeActionKinds":["quickfix"]}},"serverOptions":{"logFile":"C:\\Users\\ACER\\Documents\\workspace-spring-tools-for-eclipse-4.31.0.RELEASE\\.metadata\\angular-language-server.log"}}}
+[2025-08-19T22:55:47.914411200+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 52
+
+
+[2025-08-19T22:55:47.914411200+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","method":"initialized","params":{}}
+[2025-08-19T22:55:47.921932800+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 586
+
+
+[2025-08-19T22:55:47.921932800+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html","languageId":"html","version":1,"text":"\u003c!DOCTYPE html\u003e\r\n\u003chtml xmlns:th\u003d\"http://www.thymeleaf.org\"\u003e\r\n\u003chead\u003e\u003cmeta charset\u003d\"UTF-8\"\u003e\u003ctitle\u003eHome\u003c/title\u003e\u003c/head\u003e\r\n\u003cbody\u003e\r\n\u003ch1 th:text\u003d\"${msg}\"\u003emsg\u003c/h1\u003e\r\n\u003c/body\u003e\r\n\u003c/html\u003e\r\n"}}}
+[2025-08-19T22:55:47.922932300+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 226
+
+
+[2025-08-19T22:55:47.923936300+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","method":"workspace/didChangeWorkspaceFolders","params":{"event":{"added":[{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/","name":"iot-web"}],"removed":[]}}}
+[2025-08-19T22:55:47.924937+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 225
+
+
+[2025-08-19T22:55:47.924937+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"2","method":"textDocument/codeLens","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"}}}
+[2025-08-19T22:55:47.926444200+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 229
+
+
+[2025-08-19T22:55:47.927455100+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"3","method":"textDocument/foldingRange","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"}}}
+[2025-08-19T22:55:48.689869900+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"2","result":null}
+[2025-08-19T22:55:48.690855200+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"3","result":null}
+[2025-08-19T22:55:54.939644400+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 352
+
+
+[2025-08-19T22:55:54.940659100+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","method":"textDocument/didChange","params":{"textDocument":{"version":2,"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"contentChanges":[{"range":{"start":{"line":4,"character":0},"end":{"line":4,"character":0}},"rangeLength":0,"text":"\t"}]}}
+[2025-08-19T22:55:55.446577500+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 225
+
+
+[2025-08-19T22:55:55.447127200+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"4","method":"textDocument/codeLens","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"}}}
+[2025-08-19T22:55:55.450665400+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 229
+
+
+[2025-08-19T22:55:55.450665400+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"5","method":"textDocument/foldingRange","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"}}}
+[2025-08-19T22:55:55.451668100+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"4","result":null}
+[2025-08-19T22:55:55.454668600+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"5","result":null}
+[2025-08-19T22:55:56.177113200+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 353
+
+
+[2025-08-19T22:55:56.178125200+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","method":"textDocument/didChange","params":{"textDocument":{"version":3,"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"contentChanges":[{"range":{"start":{"line":4,"character":0},"end":{"line":4,"character":30}},"rangeLength":30,"text":"h"}]}}
+[2025-08-19T22:55:56.207734200+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 291
+
+
+[2025-08-19T22:55:56.207734200+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"6","method":"textDocument/completion","params":{"context":{"triggerKind":1},"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":4,"character":1}}}
+[2025-08-19T22:55:56.209742500+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"6","result":null}
+[2025-08-19T22:55:56.320015800+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 351
+
+
+[2025-08-19T22:55:56.321016300+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","method":"textDocument/didChange","params":{"textDocument":{"version":4,"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"contentChanges":[{"range":{"start":{"line":4,"character":1},"end":{"line":4,"character":1}},"rangeLength":0,"text":"1"}]}}
+[2025-08-19T22:55:56.340776800+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 291
+
+
+[2025-08-19T22:55:56.341776700+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"7","method":"textDocument/completion","params":{"context":{"triggerKind":1},"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":4,"character":2}}}
+[2025-08-19T22:55:56.343775+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"7","result":null}
+[2025-08-19T22:55:56.821262600+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 225
+
+
+[2025-08-19T22:55:56.822261500+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"8","method":"textDocument/codeLens","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"}}}
+[2025-08-19T22:55:56.823263100+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"8","result":null}
+[2025-08-19T22:55:56.913793+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 291
+
+
+[2025-08-19T22:55:56.914792700+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"9","method":"textDocument/completion","params":{"context":{"triggerKind":1},"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":4,"character":2}}}
+[2025-08-19T22:55:56.915793100+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"9","result":null}
+[2025-08-19T22:55:57.322913800+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 230
+
+
+[2025-08-19T22:55:57.323914900+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"10","method":"textDocument/foldingRange","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"}}}
+[2025-08-19T22:55:57.324918600+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"10","result":null}
+[2025-08-19T22:55:57.933898900+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 292
+
+
+[2025-08-19T22:55:57.934900+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"11","method":"textDocument/completion","params":{"context":{"triggerKind":1},"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":4,"character":2}}}
+[2025-08-19T22:55:57.938024300+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"11","result":null}
+[2025-08-19T22:56:01.475907200+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 265
+
+
+[2025-08-19T22:56:01.476919200+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"12","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":30}}}
+[2025-08-19T22:56:01.478921100+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"12","result":null}
+[2025-08-19T22:56:01.478921100+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 269
+
+
+[2025-08-19T22:56:01.479936500+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"13","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":30}}}
+[2025-08-19T22:56:01.481939500+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"13","result":null}
+[2025-08-19T22:56:01.505165600+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 265
+
+
+[2025-08-19T22:56:01.506165600+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"14","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":31}}}
+[2025-08-19T22:56:01.506673800+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 269
+
+
+[2025-08-19T22:56:01.507241900+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"15","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":31}}}
+[2025-08-19T22:56:01.508252+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"14","result":null}
+[2025-08-19T22:56:01.509253300+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"15","result":null}
+[2025-08-19T22:56:01.516196900+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 265
+
+
+[2025-08-19T22:56:01.516196900+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"16","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":31}}}
+[2025-08-19T22:56:01.517213600+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 269
+
+
+[2025-08-19T22:56:01.518215600+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"17","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":31}}}
+[2025-08-19T22:56:01.519233800+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"16","result":null}
+[2025-08-19T22:56:01.520232300+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"17","result":null}
+[2025-08-19T22:56:01.525225300+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 265
+
+
+[2025-08-19T22:56:01.525225300+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"18","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":31}}}
+[2025-08-19T22:56:01.525225300+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 269
+
+
+[2025-08-19T22:56:01.526227600+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"19","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":31}}}
+[2025-08-19T22:56:01.526740900+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"18","result":null}
+[2025-08-19T22:56:01.527283100+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"19","result":null}
+[2025-08-19T22:56:01.532813100+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 265
+
+
+[2025-08-19T22:56:01.532813100+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"20","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":32}}}
+[2025-08-19T22:56:01.533812800+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 269
+
+
+[2025-08-19T22:56:01.533812800+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"21","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":32}}}
+[2025-08-19T22:56:01.534817700+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"20","result":null}
+[2025-08-19T22:56:01.535817300+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"21","result":null}
+[2025-08-19T22:56:01.541265400+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 265
+
+
+[2025-08-19T22:56:01.541265400+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"22","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":32}}}
+[2025-08-19T22:56:01.541265400+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 269
+
+
+[2025-08-19T22:56:01.542265700+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"23","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":32}}}
+[2025-08-19T22:56:01.542265700+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"22","result":null}
+[2025-08-19T22:56:01.542265700+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"23","result":null}
+[2025-08-19T22:56:01.546267800+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 265
+
+
+[2025-08-19T22:56:01.547498300+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"24","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":32}}}
+[2025-08-19T22:56:01.547498300+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 269
+
+
+[2025-08-19T22:56:01.547498300+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"25","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":32}}}
+[2025-08-19T22:56:01.547498300+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"24","result":null}
+[2025-08-19T22:56:01.549509200+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"25","result":null}
+[2025-08-19T22:56:01.553506100+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 265
+
+
+[2025-08-19T22:56:01.553506100+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"26","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":32}}}
+[2025-08-19T22:56:01.553506100+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 269
+
+
+[2025-08-19T22:56:01.554504600+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"27","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":32}}}
+[2025-08-19T22:56:01.554504600+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"26","result":null}
+[2025-08-19T22:56:01.554504600+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"27","result":null}
+[2025-08-19T22:56:01.561569700+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 265
+
+
+[2025-08-19T22:56:01.561569700+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"28","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":33}}}
+[2025-08-19T22:56:01.561569700+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 269
+
+
+[2025-08-19T22:56:01.562569500+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"29","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":33}}}
+[2025-08-19T22:56:01.562569500+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"28","result":null}
+[2025-08-19T22:56:01.562569500+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"29","result":null}
+[2025-08-19T22:56:01.569090700+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 265
+
+
+[2025-08-19T22:56:01.570092800+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"30","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":33}}}
+[2025-08-19T22:56:01.570092800+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 269
+
+
+[2025-08-19T22:56:01.570092800+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"31","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":33}}}
+[2025-08-19T22:56:01.571097900+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"30","result":null}
+[2025-08-19T22:56:01.572097600+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"31","result":null}
+[2025-08-19T22:56:01.576114+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 265
+
+
+[2025-08-19T22:56:01.577266500+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"32","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":33}}}
+[2025-08-19T22:56:01.578276300+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 269
+
+
+[2025-08-19T22:56:01.578276300+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"33","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":33}}}
+[2025-08-19T22:56:01.579279+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"32","result":null}
+[2025-08-19T22:56:01.580291500+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"33","result":null}
+[2025-08-19T22:56:01.584308400+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 265
+
+
+[2025-08-19T22:56:01.584308400+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"34","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":34}}}
+[2025-08-19T22:56:01.584308400+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 269
+
+
+[2025-08-19T22:56:01.584308400+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"35","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":34}}}
+[2025-08-19T22:56:01.585816500+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"34","result":null}
+[2025-08-19T22:56:01.585816500+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"35","result":null}
+[2025-08-19T22:56:01.591850800+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 265
+
+
+[2025-08-19T22:56:01.592835300+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"36","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":34}}}
+[2025-08-19T22:56:01.592835300+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 269
+
+
+[2025-08-19T22:56:01.592835300+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"37","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":34}}}
+[2025-08-19T22:56:01.593835700+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"36","result":null}
+[2025-08-19T22:56:01.594840100+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"37","result":null}
+[2025-08-19T22:56:01.600033800+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 265
+
+
+[2025-08-19T22:56:01.601032+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"38","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":35}}}
+[2025-08-19T22:56:01.601032+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 269
+
+
+[2025-08-19T22:56:01.601032+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"39","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":35}}}
+[2025-08-19T22:56:01.602033400+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"38","result":null}
+[2025-08-19T22:56:01.603044600+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"39","result":null}
+[2025-08-19T22:56:01.607549800+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 265
+
+
+[2025-08-19T22:56:01.607549800+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"40","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":35}}}
+[2025-08-19T22:56:01.608563200+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 269
+
+
+[2025-08-19T22:56:01.608563200+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"41","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":35}}}
+[2025-08-19T22:56:01.609553800+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"40","result":null}
+[2025-08-19T22:56:01.610554500+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"41","result":null}
+[2025-08-19T22:56:01.614553400+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 265
+
+
+[2025-08-19T22:56:01.614553400+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"42","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":35}}}
+[2025-08-19T22:56:01.614553400+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 269
+
+
+[2025-08-19T22:56:01.616062400+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"43","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":35}}}
+[2025-08-19T22:56:01.616062400+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"42","result":null}
+[2025-08-19T22:56:01.617077900+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"43","result":null}
+[2025-08-19T22:56:01.622072800+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 265
+
+
+[2025-08-19T22:56:01.622072800+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"44","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":36}}}
+[2025-08-19T22:56:01.623071200+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 269
+
+
+[2025-08-19T22:56:01.623071200+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"45","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":36}}}
+[2025-08-19T22:56:01.623071200+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"44","result":null}
+[2025-08-19T22:56:01.625075100+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"45","result":null}
+[2025-08-19T22:56:01.629244900+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 265
+
+
+[2025-08-19T22:56:01.629244900+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"46","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":37}}}
+[2025-08-19T22:56:01.629244900+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 269
+
+
+[2025-08-19T22:56:01.629244900+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"47","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":37}}}
+[2025-08-19T22:56:01.630247100+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"46","result":null}
+[2025-08-19T22:56:01.631247200+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"47","result":null}
+[2025-08-19T22:56:01.634269900+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 265
+
+
+[2025-08-19T22:56:01.634269900+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"48","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":37}}}
+[2025-08-19T22:56:01.635244100+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 269
+
+
+[2025-08-19T22:56:01.635244100+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"49","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":37}}}
+[2025-08-19T22:56:01.635244100+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"48","result":null}
+[2025-08-19T22:56:01.636245700+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"49","result":null}
+[2025-08-19T22:56:01.641426500+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 265
+
+
+[2025-08-19T22:56:01.642426+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"50","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":38}}}
+[2025-08-19T22:56:01.642426+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 269
+
+
+[2025-08-19T22:56:01.643428500+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"51","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":38}}}
+[2025-08-19T22:56:01.643428500+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"50","result":null}
+[2025-08-19T22:56:01.644432600+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"51","result":null}
+[2025-08-19T22:56:01.648986900+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 265
+
+
+[2025-08-19T22:56:01.648986900+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"52","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":39}}}
+[2025-08-19T22:56:01.649990100+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 269
+
+
+[2025-08-19T22:56:01.649990100+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"53","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":39}}}
+[2025-08-19T22:56:01.650988900+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"52","result":null}
+[2025-08-19T22:56:01.650988900+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"53","result":null}
+[2025-08-19T22:56:01.657176800+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 265
+
+
+[2025-08-19T22:56:01.658185400+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"54","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":40}}}
+[2025-08-19T22:56:01.658185400+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 269
+
+
+[2025-08-19T22:56:01.658185400+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"55","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":40}}}
+[2025-08-19T22:56:01.659185700+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"54","result":null}
+[2025-08-19T22:56:01.659185700+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"55","result":null}
+[2025-08-19T22:56:01.666185200+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 265
+
+
+[2025-08-19T22:56:01.666185200+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"56","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":40}}}
+[2025-08-19T22:56:01.666692600+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 269
+
+
+[2025-08-19T22:56:01.666692600+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"57","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":40}}}
+[2025-08-19T22:56:01.667704900+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"56","result":null}
+[2025-08-19T22:56:01.668740200+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"57","result":null}
+[2025-08-19T22:56:01.672699800+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 265
+
+
+[2025-08-19T22:56:01.672699800+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"58","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":41}}}
+[2025-08-19T22:56:01.673701400+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 269
+
+
+[2025-08-19T22:56:01.673701400+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"59","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":41}}}
+[2025-08-19T22:56:01.673701400+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"58","result":null}
+[2025-08-19T22:56:01.674706300+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"59","result":null}
+[2025-08-19T22:56:01.682250700+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 265
+
+
+[2025-08-19T22:56:01.683229400+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"60","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":42}}}
+[2025-08-19T22:56:01.683229400+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 269
+
+
+[2025-08-19T22:56:01.683229400+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"61","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":42}}}
+[2025-08-19T22:56:01.684233+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"60","result":null}
+[2025-08-19T22:56:01.685241+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"61","result":null}
+[2025-08-19T22:56:01.690780900+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 265
+
+
+[2025-08-19T22:56:01.691781200+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"62","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":43}}}
+[2025-08-19T22:56:01.691781200+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 269
+
+
+[2025-08-19T22:56:01.691781200+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"63","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":43}}}
+[2025-08-19T22:56:01.692789300+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"62","result":null}
+[2025-08-19T22:56:01.692789300+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"63","result":null}
+[2025-08-19T22:56:01.702340300+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 265
+
+
+[2025-08-19T22:56:01.703338400+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"64","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":44}}}
+[2025-08-19T22:56:01.704337100+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 269
+
+
+[2025-08-19T22:56:01.704337100+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"64","result":null}
+[2025-08-19T22:56:01.704337100+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"65","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":2,"character":44}}}
+[2025-08-19T22:56:01.707873+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"65","result":null}
+[2025-08-19T22:56:08.637758100+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 292
+
+
+[2025-08-19T22:56:08.639267300+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"66","method":"textDocument/completion","params":{"context":{"triggerKind":1},"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":4,"character":2}}}
+[2025-08-19T22:56:08.640276900+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"66","result":null}
+[2025-08-19T22:56:10.192906600+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 264
+
+
+[2025-08-19T22:56:10.193903300+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"67","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":1,"character":6}}}
+[2025-08-19T22:56:10.194901700+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 268
+
+
+[2025-08-19T22:56:10.194901700+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"68","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":1,"character":6}}}
+[2025-08-19T22:56:10.196413500+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"67","result":null}
+[2025-08-19T22:56:10.197211800+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"68","result":null}
+[2025-08-19T22:56:10.266197700+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 264
+
+
+[2025-08-19T22:56:10.267213600+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"69","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":1,"character":6}}}
+[2025-08-19T22:56:10.268213800+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 268
+
+
+[2025-08-19T22:56:10.269225100+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"70","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":1,"character":6}}}
+[2025-08-19T22:56:10.269225100+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"69","result":null}
+[2025-08-19T22:56:10.271241300+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"70","result":null}
+[2025-08-19T22:56:10.453682100+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 292
+
+
+[2025-08-19T22:56:10.453682100+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"71","method":"textDocument/completion","params":{"context":{"triggerKind":1},"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":4,"character":2}}}
+[2025-08-19T22:56:10.454684900+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"71","result":null}
+[2025-08-19T22:56:10.497177600+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 264
+
+
+[2025-08-19T22:56:10.497177600+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"72","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":1,"character":6}}}
+[2025-08-19T22:56:10.498179600+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 268
+
+
+[2025-08-19T22:56:10.499190800+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"73","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":1,"character":6}}}
+[2025-08-19T22:56:10.499190800+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"72","result":null}
+[2025-08-19T22:56:10.500197800+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"73","result":null}
+[2025-08-19T22:56:10.507714200+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 264
+
+
+[2025-08-19T22:56:10.507714200+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"74","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":0,"character":6}}}
+[2025-08-19T22:56:10.508715900+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 268
+
+
+[2025-08-19T22:56:10.508715900+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"75","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":0,"character":6}}}
+[2025-08-19T22:56:10.509727400+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"74","result":null}
+[2025-08-19T22:56:10.510728100+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"75","result":null}
+[2025-08-19T22:56:10.517254400+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 264
+
+
+[2025-08-19T22:56:10.518254200+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"76","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":0,"character":5}}}
+[2025-08-19T22:56:10.519274200+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 268
+
+
+[2025-08-19T22:56:10.519274200+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"77","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":0,"character":5}}}
+[2025-08-19T22:56:10.520271100+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"76","result":null}
+[2025-08-19T22:56:10.521267800+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"77","result":null}
+[2025-08-19T22:56:10.526781100+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 264
+
+
+[2025-08-19T22:56:10.527793500+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"78","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":0,"character":5}}}
+[2025-08-19T22:56:10.527793500+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 268
+
+
+[2025-08-19T22:56:10.527793500+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"79","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":0,"character":5}}}
+[2025-08-19T22:56:10.528796300+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"78","result":null}
+[2025-08-19T22:56:10.528796300+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"79","result":null}
+[2025-08-19T22:56:10.533827100+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 264
+
+
+[2025-08-19T22:56:10.534805900+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"80","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":0,"character":5}}}
+[2025-08-19T22:56:10.534805900+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 268
+
+
+[2025-08-19T22:56:10.535808600+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"81","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":0,"character":5}}}
+[2025-08-19T22:56:10.536316+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"80","result":null}
+[2025-08-19T22:56:10.537211+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"81","result":null}
+[2025-08-19T22:56:10.541753600+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 264
+
+
+[2025-08-19T22:56:10.542739300+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"82","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":0,"character":4}}}
+[2025-08-19T22:56:10.543744300+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 268
+
+
+[2025-08-19T22:56:10.543744300+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"83","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":0,"character":4}}}
+[2025-08-19T22:56:10.544744700+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"82","result":null}
+[2025-08-19T22:56:10.544744700+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"83","result":null}
+[2025-08-19T22:56:10.549287300+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 264
+
+
+[2025-08-19T22:56:10.549287300+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"84","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":0,"character":4}}}
+[2025-08-19T22:56:10.550269800+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 268
+
+
+[2025-08-19T22:56:10.550269800+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"85","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":0,"character":4}}}
+[2025-08-19T22:56:10.550269800+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"84","result":null}
+[2025-08-19T22:56:10.551271900+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"85","result":null}
+[2025-08-19T22:56:10.554270800+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 264
+
+
+[2025-08-19T22:56:10.555271400+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"86","method":"textDocument/definition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":0,"character":3}}}
+[2025-08-19T22:56:10.555271400+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 268
+
+
+[2025-08-19T22:56:10.555271400+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"87","method":"textDocument/typeDefinition","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"},"position":{"line":0,"character":3}}}
+[2025-08-19T22:56:10.556272300+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"86","result":null}
+[2025-08-19T22:56:10.556272300+07:00] LANGUAGE_SERVER_TO_LSP4E org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","id":"87","result":null}
+[2025-08-19T22:56:34.842613700+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+Content-Length: 216
+
+
+[2025-08-19T22:56:34.843615+07:00] LSP4E_TO_LANGUAGE_SERVER org.eclipse.wildwebdeveloper.angular:
+{"jsonrpc":"2.0","method":"textDocument/didClose","params":{"textDocument":{"uri":"file:///C:/Users/ACER/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/iot-web/src/main/resources/templates/index.html"}}}
