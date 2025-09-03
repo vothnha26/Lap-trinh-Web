@@ -61,15 +61,11 @@ public class CategoryEditController extends HttpServlet {
 
             Part filePart = request.getPart("icon");
             
-            // Chỉ xử lý nếu người dùng thực sự chọn một file mới
             if (filePart != null && filePart.getSize() > 0) {
                 String fileName = Paths.get(filePart.getSubmittedFileName()).getFileName().toString();
 
-                // ---- SỬA LẠI HOÀN TOÀN LOGIC XỬ LÝ ĐƯỜNG DẪN ----
-                // 1. Lấy đường dẫn gốc của ứng dụng web trên server
                 String realPath = request.getServletContext().getRealPath("/");
 
-                // 2. Xóa file ảnh cũ (nếu có) một cách an toàn
                 String oldIconPath = categoryToUpdate.getIcon();
                 if (oldIconPath != null && !oldIconPath.isEmpty()) {
                     File oldFile = new File(realPath + oldIconPath);
@@ -78,26 +74,19 @@ public class CategoryEditController extends HttpServlet {
                     }
                 }
                 
-                // 3. Tạo tên file mới duy nhất
                 String newFileName = System.currentTimeMillis() + "_" + fileName;
                 
-                // 4. Đường dẫn đầy đủ đến thư mục sẽ lưu file
                 String uploadDirPath = realPath + Constant.DIR + File.separator + "category";
                 
-                // 5. Kiểm tra và tạo thư mục nếu chưa tồn tại
                 File uploadDir = new File(uploadDirPath);
                 if (!uploadDir.exists()) {
                     uploadDir.mkdirs();
                 }
                 
-                // 6. Đường dẫn đầy đủ đến file mới
                 String filePath = uploadDirPath + File.separator + newFileName;
                 
-                // 7. Lưu file mới
                 filePart.write(filePath);
                 
-                // 8. Cập nhật đường dẫn TƯƠNG ĐỐI vào đối tượng để lưu vào DB
-                // Đường dẫn này phải nhất quán với lúc Add
                 categoryToUpdate.setIcon(Constant.DIR + "/category/" + newFileName);
             }
 

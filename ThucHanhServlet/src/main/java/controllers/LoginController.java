@@ -72,6 +72,7 @@ public class LoginController extends HttpServlet {
         User user = service.login(username, password);
         
         if (user != null) {
+        	Constant.UserId = user.getId();
             HttpSession session = request.getSession(true);
             session.setAttribute("account", user);
             if (isRememberMe) {

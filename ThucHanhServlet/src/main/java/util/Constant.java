@@ -2,7 +2,9 @@ package util;
 
 public final class Constant {
     
-    public static final String DIR = "uploads";;
+    public static final String DIR = "uploads";
+    
+    public static int UserId = 0;
 
 	private Constant() {}
 

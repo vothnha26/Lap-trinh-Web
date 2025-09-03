@@ -4,6 +4,7 @@ public class Category {
 	private int cateid;
 	private String catename;
 	private String icon;
+	private int userId;
 	
 	public int getCateid() {
 		return cateid;
@@ -22,6 +23,12 @@ public class Category {
 	}
 	public void setIcon(String icon) {
 		this.icon = icon;
+	}
+	public int getUserId() {
+		return userId;
+	}
+	public void setUserId(int userId) {
+		this.userId = userId;
 	}
 
 }
